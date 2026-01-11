@@ -19,16 +19,16 @@ export const FooterLinks: FC = () => {
       </ul>
       <div className={"space-y-6"}>
         <div className={"text-white"}>
-          <h4 className={"font-medium"}>Address:</h4>
-          <p className={"text-sm md:text-base"}>
+          <h4 className={"text-sm md:text-base font-medium"}>Address:</h4>
+          <p className={"text-xs md:text-base"}>
             Lorem ipsum dolor sit amet consectetur. Sed non sit sed nunc nam
             nunc tellus.{" "}
           </p>
         </div>
         <div className={"text-white"}>
-          <h4 className={"font-medium"}>Contact:</h4>
-          <p className={"underline text-sm md:text-base"}>+1 703 4565 284</p>
-          <p className={"underline text-sm md:text-base"}>
+          <h4 className={"text-sm md:text-base font-medium"}>Contact:</h4>
+          <p className={"underline text-xs md:text-base"}>+1 703 4565 284</p>
+          <p className={"underline text-xs md:text-base"}>
             <Link href={"mailto:hello@ripple.com"}>hello@ripple.com</Link>
           </p>
         </div>
