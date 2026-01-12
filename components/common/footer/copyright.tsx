@@ -6,7 +6,7 @@ import { FC } from "react";
 export const Copyright: FC = () => {
   const year = new Date().getFullYear();
   return (
-    <div className={"flex flex-col md:flex-row justify-between"}>
+    <div className={"flex flex-col md:flex-row justify-between space-y-3 md:space-y-0"}>
       <p className={"text-xs md:text-sm text-white"}>
         {year}&copy; Ripple. All rights reserved.
       </p>
