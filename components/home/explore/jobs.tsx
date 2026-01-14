@@ -1,8 +1,9 @@
 import { ArrowRight, Dot } from "lucide-react";
 import Link from "next/link";
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 import { Button } from "@/components/common/button";
 import { madeSoulmaze, manRope } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 export const Jobs: FC = () => {
   return (
@@ -34,14 +35,21 @@ export const Jobs: FC = () => {
   );
 };
 
-type JobProps = {
+type JobProps = ComponentProps<"div"> & {
   title: string;
   location: string;
 };
 
-const Job: FC<JobProps> = ({ location, title }) => {
+export const Job: FC<JobProps> = ({
+  location,
+  title,
+  className,
+  ...restProps
+}) => {
+  const c = cn("rounded-xl bg-white py-7 px-5 space-y-4", className);
+
   return (
-    <div className={"rounded-xl bg-white py-7 px-5 space-y-4"}>
+    <div className={c} {...restProps}>
       <div className={`flex justify-between ${manRope.className}`}>
         <h3 className={"font-medium text-base md:text-lg max-w-56"}>{title}</h3>
         <button

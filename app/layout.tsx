@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Footer } from "@/components/common/footer";
+import { Techlab } from "@/components/home/techlab";
 import { env } from "@/lib/env";
 import { inter } from "@/lib/fonts";
 
@@ -19,8 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased p-2 md:p-4`}>
-        {children}
+      <body className={`${inter.className} antialiased`}>
+        <div className={"p-2 md:p-4"}>{children}</div>
+        <div
+          className={
+            "py-6 px-4 md:py-20 md:px-16 bg-black rounded-2xl relative h-max space-y-12"
+          }
+        >
+          <Techlab />
+          <Footer />
+        </div>
       </body>
     </html>
   );
