@@ -54,7 +54,7 @@ export const NavLinksSM: FC = () => {
     <div className={"block xl:hidden"}>
       <Sheet>
         <SheetTrigger asChild>
-          <Button className={"text-white"}>
+          <Button className={"text-white relative z-10"}>
             <Menu className={"size-5"} />
           </Button>
         </SheetTrigger>
