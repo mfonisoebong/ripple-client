@@ -8,7 +8,7 @@ export const Testimonials: FC = () => {
     <section className={"bg-black rounded-2xl py-8 relative"}>
       <div
         className={
-          "testimonial-fade-left h-64 top-12 w-9 md:w-24 absolute z-20"
+          "testimonial-fade-left h-64 top-12 w-9 md:w-24 absolute z-20 left-0"
         }
       ></div>
       <div

@@ -25,7 +25,7 @@ export default function Page() {
           className={"hidden lg:block w-24 xl:w-36 absolute left-1/5 bottom-0"}
         />
       </HeadSection>
-      <div className="bg-white">
+      <div className="bg-white space-y-6">
         <Skills />
         <SkillList />
         <Testimonials />
